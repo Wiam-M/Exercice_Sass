@@ -1,0 +1,69 @@
+$colorGray : rgb(51, 50, 50);
+$colorLight: rgb(19, 20, 27);
+$fontFamily: Georgia;
+$primaryFontSize: 1.4em;
+$headingFontSize: 1.5em;
+/*Exercice 1*/
+h1 {
+    background-color: $colorLight;
+}
+h3{
+    color: $colorGray;
+}
+/*Exercice 2*/
+@mixin styleElement {
+    font-size: $primaryFontSize;
+    color: $colorGray;
+    font-family: $fontFamily;
+}
+@mixin styleHeading {
+    font-size: $headingFontSize;
+    background-color: cadetblue;
+    font-family: $fontFamily;
+    
+}
+p:first-child{
+    @include styleElement;
+}
+p:last-child{
+    @include styleElement;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+p:nth-child(3){
+    @include styleElement;
+    color: olivedrab;
+}
+h3{
+    @include styleHeading;
+    border-bottom: 1px solid navy;
+}
+/*Exercice 3*/
+.corps{
+    background: paleturquoise;
+    ul{
+        font-style: $fontFamily;
+    }
+    li{
+        color: purple;
+        line-height: 30px;
+        text-decoration: underline;
+    }
+}
+/*Exercice 4*/
+.firstClass{
+    width: 90%;
+    background: salmon;
+    font-size: $headingFontSize;
+}
+.secondClass-created{
+    @extend .firstClass;
+    border:2px solid green;
+}
+/*Exercice 5*/
+p:nth-child(4){
+    text-decoration: underline;
+    font-size: $primaryFontSize;
+    &:hover{
+        background: greenyellow;
+    }
+}

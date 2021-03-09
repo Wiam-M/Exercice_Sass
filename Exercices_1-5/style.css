@@ -1,0 +1,73 @@
+/*Exercice 1*/
+h1 {
+  background-color: #13141b;
+}
+
+h3 {
+  color: #333232;
+}
+
+/*Exercice 2*/
+p:first-child {
+  font-size: 1.4em;
+  color: #333232;
+  font-family: Georgia;
+}
+
+p:last-child {
+  font-size: 1.4em;
+  color: #333232;
+  font-family: Georgia;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p:nth-child(3) {
+  font-size: 1.4em;
+  color: #333232;
+  font-family: Georgia;
+  color: olivedrab;
+}
+
+h3 {
+  font-size: 1.5em;
+  background-color: cadetblue;
+  font-family: Georgia;
+  border-bottom: 1px solid navy;
+}
+
+/*Exercice 3*/
+.corps {
+  background: paleturquoise;
+}
+
+.corps ul {
+  font-style: Georgia;
+}
+
+.corps li {
+  color: purple;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+/*Exercice 4*/
+.firstClass, .secondClass-created {
+  width: 90%;
+  background: salmon;
+  font-size: 1.5em;
+}
+
+.secondClass-created {
+  border: 2px solid green;
+}
+
+/*Exercice 5*/
+p:nth-child(4) {
+  text-decoration: underline;
+  font-size: 1.4em;
+}
+
+p:nth-child(4):hover {
+  background: greenyellow;
+}
+/*# sourceMappingURL=style.css.map */
