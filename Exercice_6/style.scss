@@ -1,0 +1,35 @@
+$linkColor: red;
+$linkBackgroundColor: burlywood;
+$headingColor: rgb(255, 153, 0);
+@mixin setBackgroundStyle ($url) {
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+@mixin setTitleStyle {
+    color: $headingColor;
+    height: 100px;
+    font-size: 2em;
+    text-align: left;
+   padding: 5% 5%; 
+}
+ol {
+    background: $linkBackgroundColor;
+    & a:hover{
+        color: $linkColor;
+    }
+}
+#introduction{
+    @include setBackgroundStyle (url("images/125_axolotls.jpeg"));
+    @include setTitleStyle;
+    
+}
+#habitat_et_distribution{
+    @include setBackgroundStyle(url("http://biotope-aquarium.info/wp-content/uploads/Western_coast_of_the_former_Hiko_island_the_remains_of_Chalco_Lake_1.jpg"));
+    @include setTitleStyle();
+}
+h3, h4{
+    color: $headingColor;
+    font-size: 1.5em;
+}
